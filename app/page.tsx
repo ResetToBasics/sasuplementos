@@ -62,7 +62,7 @@ export default function Home() {
       
       {/* --- NAVBAR --- */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-2 md:py-3' : 'py-3 md:py-6'}`}>
-        <div className={`w-full max-w-7xl mx-auto px-3 md:px-4 relative flex justify-between items-center transition-all duration-500 ${
+        <div className={`w-[92%] md:w-full max-w-[440px] md:max-w-7xl mx-auto px-3 md:px-4 relative flex justify-between items-center transition-all duration-500 ${
           scrolled 
             ? 'bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl md:rounded-2xl py-3 md:py-4 shadow-2xl' 
             : ''
@@ -125,7 +125,7 @@ export default function Home() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 w-full bg-slate-900/98 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col gap-2 shadow-2xl animate-in slide-in-from-top-5">
+          <div className="md:hidden absolute top-full left-1/2 -translate-x-1/2 w-[92%] max-w-[440px] bg-slate-900/98 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col gap-2 shadow-2xl animate-in slide-in-from-top-5 rounded-xl border border-white/10">
             <a 
               href="#home" 
               onClick={() => setIsMenuOpen(false)}
@@ -763,4 +763,3 @@ const products: Product[] = [
     badge: null
   }
 ];
-
