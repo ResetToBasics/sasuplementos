@@ -64,7 +64,7 @@ export default function Home() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-2 md:py-3' : 'py-3 md:py-6'}`}>
         <div className={`w-[92%] md:w-full max-w-[440px] md:max-w-7xl mx-auto px-3 md:px-4 relative flex justify-between items-center transition-all duration-500 ${
           scrolled 
-            ? 'bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl md:rounded-2xl py-3 md:py-4 shadow-2xl' 
+            ? 'bg-slate-900/95 backdrop-blur-xl rounded-xl md:rounded-2xl py-3 md:py-4 shadow-2xl' 
             : ''
         }`}>
           {/* Actions - Left */}
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
 
           {/* Desktop Menu - Left */}
-          <div className={`hidden md:flex items-center gap-6 font-medium text-sm tracking-wide transition-all duration-500 ${scrolled ? '' : 'transform translate-y-4'}`}>
+          <div className={`hidden md:flex items-center gap-8 lg:gap-10 font-medium text-sm tracking-wide transition-all duration-500 md:ml-8 lg:ml-12 ${scrolled ? '' : 'transform translate-y-4'}`}>
             <a href="#home" className="hover:text-[#ffc10e] transition-colors whitespace-nowrap">Início</a>
             <a href="#products" className="hover:text-[#ffc10e] transition-colors whitespace-nowrap">Produtos</a>
           </div>
@@ -104,13 +104,13 @@ export default function Home() {
           </div>
 
           {/* Desktop Menu - Right */}
-          <div className={`hidden md:flex items-center gap-6 font-medium text-sm tracking-wide transition-all duration-500 ${scrolled ? '' : 'transform translate-y-4'}`}>
+          <div className={`hidden md:flex items-center gap-8 lg:gap-10 font-medium text-sm tracking-wide transition-all duration-500 md:ml-32 lg:ml-48 ${scrolled ? '' : 'transform translate-y-4'}`}>
             <a href="#categories" className="hover:text-[#ffc10e] transition-colors whitespace-nowrap">Categorias</a>
             <a href="#about" className="hover:text-[#ffc10e] transition-colors whitespace-nowrap">Sobre</a>
           </div>
 
           {/* Actions - Right */}
-          <div className={`flex items-center gap-2 md:gap-4 transition-all duration-500 z-30 ${scrolled ? '' : 'md:transform md:translate-y-4'}`}>
+          <div className={`flex items-center gap-2 md:gap-16 lg:gap-20 transition-all duration-500 z-30 ${scrolled ? '' : 'md:transform md:translate-y-4'}`}>
             <button 
               className="md:hidden p-2 text-white active:scale-95 transition-transform z-30"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
